@@ -1,7 +1,6 @@
 //your parameter variables go here!
-let cir_width  = 120;
-let cir_height = cir_width;
-//let Night_background = color(233, 245, 2);
+let circle_posX = 100;
+let circle_posY = 100;
 
 function setup_wallpaper(pWallpaper) {
   pWallpaper.output_mode(DEVELOP_GLYPH);
@@ -15,25 +14,33 @@ function setup_wallpaper(pWallpaper) {
 }
 
 function wallpaper_background() {
-  background(45, 12, 48); // dark purple 
+  background(232, 224, 209); // Light orange background
   
 }
 
 function my_symbol() { // do not rename this function. Treat this similarly to a Draw function
- 
-  fill(233, 245, 2); // Yellow
-  strokeWeight(1);
-  stroke(233, 245, 2); // skyline color
-  line(0,150,200,150); // skyline
-  strokeWeight(0);
-  arc(100,150,cir_width,cir_height,180,360); // moon
-  strokeWeight(3);
-  stroke(233, 245, 2);
-  line(50,158,150,158);
-  strokeWeight(2);
-  line(70,166,130,166);
-  strokeWeight(2);
-  line(90,174,110,174);
+  strokeWeight(5)
+  stroke(255, 149, 0) // Orange
+  fill(245, 234, 186) // Orange inner color
+    //Orange
+  circle(circle_posX,circle_posY,100,100)
+  strokeWeight(1)
+  fill(255, 149, 0)
+  arc(circle_posX,circle_posY,90,90,0,67);
+  arc(circle_posX,circle_posY,90,90,72,139);
+  arc(circle_posX,circle_posY,90,90,144,211);
+  arc(circle_posX,circle_posY,90,90,216,283);
+  arc(circle_posX,circle_posY,90,90,288,355);
+
+  fill(252, 163, 38);
+  arc(circle_posX,circle_posY,80,80,0,67);
+  arc(circle_posX,circle_posY,80,80,72,139);
+  arc(circle_posX,circle_posY,80,80,144,211);
+  arc(circle_posX,circle_posY,80,80,216,283);
+  arc(circle_posX,circle_posY,80,80,288,355);
+  fill(245, 234, 186); 
+  circle(circle_posX,circle_posY,15,15);
+
 
 
  
