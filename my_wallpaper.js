@@ -39,6 +39,7 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
   arc(circle_posX,circle_posY,80,80,216,283);
   arc(circle_posX,circle_posY,80,80,288,355);
   fill(245, 234, 186); 
+  stroke(252, 163, 38);
   circle(circle_posX,circle_posY,15,15);
 
 
