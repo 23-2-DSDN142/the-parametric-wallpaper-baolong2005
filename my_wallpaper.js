@@ -25,14 +25,14 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
     //Orange
   circle(circle_posX,circle_posY,100,100)
   strokeWeight(1)
-  fill(255, 149, 0)
+  fill(255, 149, 0) // Orange
   arc(circle_posX,circle_posY,90,90,0,67);
   arc(circle_posX,circle_posY,90,90,72,139);
   arc(circle_posX,circle_posY,90,90,144,211);
   arc(circle_posX,circle_posY,90,90,216,283);
   arc(circle_posX,circle_posY,90,90,288,355);
 
-  fill(252, 163, 38);
+  fill(252, 163, 38);  
   arc(circle_posX,circle_posY,80,80,0,67);
   arc(circle_posX,circle_posY,80,80,72,139);
   arc(circle_posX,circle_posY,80,80,144,211);
@@ -42,7 +42,10 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
   stroke(252, 163, 38);
   circle(circle_posX,circle_posY,15,15);
 
-
+  strokeWeight(0);
+  ellipse(110,90,10,5);
+  rotateZ(ellipse()/1000)
+  
 
  
 }
