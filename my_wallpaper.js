@@ -1,8 +1,8 @@
 //your parameter variables go here!
 let circle_posX = 100;
 let circle_posY = 100;
-var circle_scaleW = 80;
-var circle_scaleH = 80;
+var circle_scaleW = 100;
+var circle_scaleH = 100;
 
 function setup_wallpaper(pWallpaper) {
   pWallpaper.output_mode(DEVELOP_GLYPH);
