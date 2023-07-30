@@ -4,6 +4,7 @@ var circle_posY = 100;
 var circle_scaleW = 100;
 var circle_scaleH = 100;
 
+
 function setup_wallpaper(pWallpaper) {
   pWallpaper.output_mode(DEVELOP_GLYPH);
   pWallpaper.resolution(FIT_TO_SCREEN);
@@ -43,8 +44,8 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
   arc(circle_posX,circle_posY,circle_scaleW - 20,circle_scaleH - 20,288,355);
   fill(245, 234, 186);
   strokeWeight(3); 
-  stroke(252, 163, 38);
-  circle(circle_posX,circle_posY,15,15);
+  stroke(252, 163, 38); //Lighter inner Orange
+  circle(circle_posX,circle_posY,15,15); // Orange core
 
 
   
