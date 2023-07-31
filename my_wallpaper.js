@@ -47,7 +47,7 @@ function Orange(circle_posX,circle_posY,circle_scaleW,circle_scaleH)  {
   stroke(252, 163, 38); //Lighter inner Orange
   circle(circle_posX,circle_posY,circle_scaleW/8,circle_scaleH/8); // Orange core
 }
-  
+function Grapes(){}
   
   
 
