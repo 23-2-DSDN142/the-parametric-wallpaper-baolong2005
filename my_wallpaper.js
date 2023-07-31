@@ -1,5 +1,5 @@
 //your parameter variables go here!
-let isDay = false;
+let isDay = true;
 function setup_wallpaper(pWallpaper) {
   pWallpaper.output_mode(DEVELOP_GLYPH);
   //pWallpaper.output_mode(GRID_WALLPAPER);
