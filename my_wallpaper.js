@@ -1,5 +1,5 @@
 //your parameter variables go here!
-let isDay = true;
+let isDay = false;
 let OrangeSize  = 100;
 let OrangePosX = 100;
 let OrangePosY = 100;
@@ -12,7 +12,7 @@ function setup_wallpaper(pWallpaper) {
   pWallpaper.output_mode(DEVELOP_GLYPH);
   //pWallpaper.output_mode(GRID_WALLPAPER);
   pWallpaper.resolution(FIT_TO_SCREEN);
-  pWallpaper.show_guide(true); //set this to false when you're ready to print
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
 
   //Grid settings
   pWallpaper.grid_settings.cell_width  = 200;
@@ -24,7 +24,7 @@ function wallpaper_background() {
   if(isDay){
   background(232, 224, 209); // Light orange background (day)
 } else{
-  background(48, 34, 48); // dark purple background (night)
+  background(112, 39, 115); // dark purple background (night)
 }
 }
 
@@ -34,10 +34,10 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
   Orange(OrangePosX,OrangePosY,OrangeSize,OrangeSize);
   } else{Kiwi(KiwiPosX,KiwiPosY,KiwiSize,KiwiSize);}
 
-//Orange(100,100,OrangeSize,OrangeSize);
+
 }
 
-
+  //Orange(100,100,OrangeSize,OrangeSize);
 function Orange(circle_posX,circle_posY,circle_scaleW,circle_scaleH)  {
  
   strokeWeight(5)
@@ -68,15 +68,16 @@ function Orange(circle_posX,circle_posY,circle_scaleW,circle_scaleH)  {
 
   //Kiwi(100,100,100,100);
 function Kiwi(kiwi_posX,kiwi_posY,kiwi_scaleW,kiwi_scaleH){
-  stroke(87, 56, 14) // dark brown
-  fill(122, 74, 7) // brown
+  stroke(105, 70, 23) // dark brown
+  fill(140, 86, 10) // brown
   circle(kiwi_posX,kiwi_posY,kiwi_scaleW,kiwi_scaleH);
   fill(94, 214, 75); // light green
   circle(kiwi_posX,kiwi_posY,kiwi_scaleW - 10,kiwi_scaleH - 10);
   fill(232, 224, 209);
   strokeWeight(0);
-  circle(kiwi_posX,kiwi_posY,kiwi_scaleW - 80,kiwi_scaleH - 80) // Kiwi core
-  
+  ellipse(kiwi_posX,kiwi_posY,kiwi_scaleW - 70,kiwi_scaleH - 95);
+  ellipse(kiwi_posX,kiwi_posY,kiwi_scaleW - 95,kiwi_scaleH - 70);
+  circle(kiwi_posX,kiwi_posY,kiwi_scaleW - 85,kiwi_scaleH - 85); // Kiwi core
 
   }
 
