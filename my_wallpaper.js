@@ -1,13 +1,13 @@
 //your parameter variables go here!
-let isDay = false;
+let isDay = true;
 let OrangeSize  = 100;
 let OrangePosX = 100;
 let OrangePosY = 100;
 let KiwiSize = 100;
 let KiwiPosX = 100;
-let KiwiPosY= 100
+let KiwiPosY= 100;
+ 
 
-//let orangeColor = fill(245, 234, 186);
 function setup_wallpaper(pWallpaper) {
   pWallpaper.output_mode(DEVELOP_GLYPH);
   //pWallpaper.output_mode(GRID_WALLPAPER);
@@ -32,14 +32,15 @@ function wallpaper_background() {
 function my_symbol() { // do not rename this function. Treat this similarly to a Draw function
   if(isDay){
   Orange(OrangePosX,OrangePosY,OrangeSize,OrangeSize);
-  } else{Kiwi(KiwiPosX,KiwiPosY,KiwiSize,KiwiSize);}
+  } else{ 
+    Kiwi(KiwiPosX - 30,KiwiPosY - 50,KiwiSize/1.25,KiwiSize/1.25);
+    Kiwi(KiwiPosX + 40,KiwiPosY + 40,KiwiSize/1.25,KiwiSize/1.25);
+  } 
+  }
 
-
-}
 
   //Orange(100,100,OrangeSize,OrangeSize);
 function Orange(circle_posX,circle_posY,circle_scaleW,circle_scaleH)  {
- 
   strokeWeight(5)
   stroke(255, 149, 0) // Orange
   fill(245, 234, 186) // Orange inner color
@@ -70,14 +71,15 @@ function Orange(circle_posX,circle_posY,circle_scaleW,circle_scaleH)  {
 function Kiwi(kiwi_posX,kiwi_posY,kiwi_scaleW,kiwi_scaleH){
   stroke(105, 70, 23) // dark brown
   fill(140, 86, 10) // brown
-  circle(kiwi_posX,kiwi_posY,kiwi_scaleW,kiwi_scaleH);
-  fill(94, 214, 75); // light green
-  circle(kiwi_posX,kiwi_posY,kiwi_scaleW - 10,kiwi_scaleH - 10);
-  fill(232, 224, 209);
+  circle(kiwi_posX,kiwi_posY,kiwi_scaleW,kiwi_scaleH); // Outer brown of the kiwi
+  fill(50, 168, 64); // green
+  circle(kiwi_posX,kiwi_posY,kiwi_scaleW - 10,kiwi_scaleH - 10); // Inner green of the kiwi
   strokeWeight(0);
-  ellipse(kiwi_posX,kiwi_posY,kiwi_scaleW - 70,kiwi_scaleH - 95);
-  ellipse(kiwi_posX,kiwi_posY,kiwi_scaleW - 95,kiwi_scaleH - 70);
-  circle(kiwi_posX,kiwi_posY,kiwi_scaleW - 85,kiwi_scaleH - 85); // Kiwi core
+  fill(232, 224, 209); // light orange for the core
+  strokeWeight(0);
+  ellipse(kiwi_posX,kiwi_posY,kiwi_scaleW/3.3,kiwi_scaleH/6.3); // Horizontal ellipse core
+  ellipse(kiwi_posX,kiwi_posY,kiwi_scaleW/6.3,kiwi_scaleH/3.3); // Vertical ellipse core
+  circle(kiwi_posX,kiwi_posY,kiwi_scaleW/6,kiwi_scaleH/6); // Kiwi core
 
   }
 
