@@ -3,9 +3,9 @@ let isDay = true;
 let OrangeSize  = 100;
 let OrangePosX = 100;
 let OrangePosY = 100;
-let KiwiSize = 120;
-let KiwiPosX = 180;
-let KiwiPosY= 70;
+let KiwiSize = 100;
+let KiwiPosX = 100;
+let KiwiPosY= 100;
 
 
 function setup_wallpaper(pWallpaper) {
@@ -42,10 +42,10 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
   //Orange(100,100,OrangeSize,OrangeSize);
 function Orange(circle_posX,circle_posY,circle_scaleW,circle_scaleH)  {
   let Orange_color1 = color(255, 149, 0); // Original color
-  let Orange_color2 = color(153, 31, 59);
-  let Orange_innercolor2 = color(176, 48, 77);
+  let Orange_color2 = color(153, 31, 59); // Magenta color  
+  let Orange_innercolor2 = color(176, 48, 77); // Inner Magenta color
   let Orange_innercolor1 = color(245, 234, 186); // Original color
-  let Orange_lighterinnercolor2 = color(212, 72, 104);
+  let Orange_lighterinnercolor2 = color(212, 72, 104); // Lighter magenta color
   let Orange_lighterinnercolor1 = color(252, 163, 38); // Original color
   strokeWeight(5)
   stroke(Orange_color2) // Orange
