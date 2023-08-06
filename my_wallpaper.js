@@ -1,16 +1,16 @@
 //your parameter variables go here!
 let isDay = true;
-let OrangeSize  = 130;
-let OrangePosX = 70;
-let OrangePosY = 80;
+let OrangeSize  = 100;
+let OrangePosX = 100;
+let OrangePosY = 100;
 let KiwiSize = 120;
 let KiwiPosX = 180;
 let KiwiPosY= 70;
 
 
 function setup_wallpaper(pWallpaper) {
-  //pWallpaper.output_mode(DEVELOP_GLYPH);
-  pWallpaper.output_mode(GRID_WALLPAPER);
+  pWallpaper.output_mode(DEVELOP_GLYPH);
+  //pWallpaper.output_mode(GRID_WALLPAPER);
   pWallpaper.resolution(FIT_TO_SCREEN);
   pWallpaper.show_guide(false); //set this to false when you're ready to print
 
